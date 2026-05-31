@@ -1,0 +1,139 @@
+.lit-card {
+  width: 210px;
+  height: 210px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+
+.lit-card:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.lit-card.align-bottom {
+  align-items: flex-end;
+  padding-bottom: 0.8rem;
+}
+
+.lit-card-text {
+  position: relative;
+  z-index: 10;
+  font-size: 2.8rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  width: 100%;
+}
+
+/* Background Patterns */
+
+.bg-starburst {
+  background-image: url('../assets/lit-bg-1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-wavy {
+  background-image: url('../assets/lit-bg-2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-agenda {
+  background-image: url('../assets/lit-bg-3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-ribbons {
+  background-image: url('../assets/lit-bg-ribbons.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-palette {
+  background-image: url('../assets/lit-bg-palette.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-how-1 {
+  background-image: url('../assets/lit-bg-how-1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-how-2 {
+  background-image: url('../assets/lit-bg-how-2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-how-3 {
+  background-image: url('../assets/lit-bg-how-3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-interventions-1 {
+  background-image: url('../assets/lit-bg-interventions-1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-interventions-3 {
+  background-image: url('../assets/lit-bg-interventions-3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-honeycomb {
+  background: 
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%),
+    linear-gradient(60deg, #000 25%, transparent 25.5%, transparent 75%, #000 75%, #000), 
+    linear-gradient(120deg, #000 25%, transparent 25.5%, transparent 75%, #000 75%, #000);
+  background-size: 40px 70px;
+  background-color: #fff;
+}
+
+.bg-snakeskin {
+  background-color: #222;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #00ffff 10px, #00ffff 12px), 
+                    repeating-linear-gradient(-45deg, transparent, transparent 10px, #00ffff 10px, #00ffff 12px);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1, #64dfdf);
+}
+
+.bg-zebra {
+  background: repeating-linear-gradient(
+    -45deg,
+    #fff,
+    #fff 10px,
+    #ff0000 10px,
+    #ff0000 20px,
+    #000 20px,
+    #000 30px
+  );
+}
+
+.bg-blocks {
+  background: 
+    linear-gradient(to right, #ff0000 50%, #ffff00 50%),
+    linear-gradient(to bottom, #00ff00 50%, #0000ff 50%);
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 20px #ff00ff;
+}
+
+.bg-circles {
+  background: 
+    radial-gradient(circle at center, #ff8c00 0%, #ff8c00 30%, transparent 31%),
+    linear-gradient(to right, #4b0082, #9400d3);
+}

@@ -1,0 +1,122 @@
+.tools-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.tool-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  gap: 1rem;
+}
+
+.tool-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.tool-card:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.tool-title {
+  position: relative;
+  z-index: 10;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.tool-desc p {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.bg-gray-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-gray-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../assets/tool-bg-prediction.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.bg-pink-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pink-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../assets/tool-bg-logic.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.fact-court-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 800px;
+  margin-top: 1rem;
+}
+
+.fact-court-icon {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fact-court-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(255, 200, 0, 0.4));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.fact-court-logo-img:hover {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 20px rgba(255, 200, 0, 0.7));
+}
+
+.fact-court-desc {
+  flex: 1;
+  text-align: left;
+}
+
+.fact-court-desc p {
+  font-size: 1.1rem;
+}
+
+/* Modifier for 4-column literature grid */
+.lit-4-cols {
+  max-width: 1050px;
+}

@@ -1,0 +1,102 @@
+/* ═══════════════════════════════════════
+   UPCOMING ROW — card left, label right
+   Casual feel, no rigid grid
+═══════════════════════════════════════ */
+.ev-upcoming-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1.5rem 5rem 0.5rem 5rem;
+}
+
+.ev-upcoming-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.6);
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.ev-upcoming-img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* ═══════════════════════════════════════
+   PAST EVENTS SECTION
+   Loose, flowing layout — no strict grid
+═══════════════════════════════════════ */
+.ev-past-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 5rem 1rem 5rem;
+}
+
+/* TMPL 2026 — pushed to the right */
+.ev-past-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ev-past-lg-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.6);
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.ev-past-lg-img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+/* Bottom row: 3 cards, right-aligned, natural spacing */
+.ev-past-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.ev-past-sm-img {
+  width: 190px;
+  height: 230px;
+  object-fit: cover;
+  object-position: center center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.6);
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.ev-past-sm-img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* Open Socrates book cover — full portrait, no cropping */
+.ev-past-book-img {
+  width: 190px;
+  height: 300px;
+  object-fit: contain;
+  object-position: center center;
+  background-color: #0d0d2b; /* matches cover's dark navy */
+  box-shadow: 0 4px 18px rgba(0,0,0,0.6);
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.ev-past-book-img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* ═══════════════════════════════════════
+   MAILING LIST
+═══════════════════════════════════════ */
+.ev-mailing {
+  padding: 3rem 5rem 4rem 5rem;
+}

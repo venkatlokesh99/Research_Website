@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@font-face {
+  font-family: 'Barabara';
+  src: url('./assets/Barabara.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tallow Sans Pen';
+  src: url('./assets/TallowSansTC-Pen.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Komorebi';
+  src: url('./assets/Komorebi-PersonalUse.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Text Gyre Pagella';
+  src: url('./assets/texgyrepagella-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Text Gyre Pagella';
+  src: url('./assets/texgyrepagella-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Text Gyre Pagella';
+  src: url('./assets/texgyrepagella-italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Text Gyre Pagella';
+  src: url('./assets/texgyrepagella-bolditalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+:root {
+  --bg-color: #000000;
+  --text-primary: #ffffff;
+  --accent-pink: #ff55b3;
+  --accent-grey: #c4c4c4;
+  --accent-yellow: #ffcc00;
+
+  --font-punk: 'Barabara', 'Permanent Marker', cursive;
+  --font-outline: 'Bungee Shade', cursive;
+  --font-nav: 'Tallow Sans Pen', 'Bebas Neue', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-wire: 'Komorebi', 'Bungee Hairline', cursive;
+  
+  --font-title-halftone: 'Rig Solid Bold Halftone', 'Bungee Shade', cursive;
+  --font-body-pagella: 'Text Gyre Pagella', serif;
+  --font-image-tags: 'Staatliches', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.punk-header {
+  font-family: var(--font-punk);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.outline-header {
+  font-family: var(--font-outline);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.nav-font {
+  font-family: var(--font-nav);
+  font-weight: normal;
+}
+
+.wire-font {
+  font-family: var(--font-wire);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.halftone-title {
+  font-family: var(--font-title-halftone);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.pagella-body {
+  font-family: var(--font-body-pagella);
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.staatliches-tags {
+  font-family: var(--font-image-tags);
+  text-transform: uppercase;
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  z-index: 100;
+  position: relative;
+}
+
+.main-content {
+  flex-grow: 1;
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+/* Typography styles */
+.pink-accent { color: var(--accent-pink); }
+.yellow-accent { color: var(--accent-yellow); }
+
+.punk-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.punk-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.punk-card-text {
+  font-family: var(--font-nav);
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.pink-banner-header {
+  background-color: #3d3d3d;
+  color: var(--accent-pink);
+  font-family: var(--font-nav);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+.title-line {
+  display: block;
+  white-space: nowrap;
+}

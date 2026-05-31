@@ -1,0 +1,135 @@
+.about-page-real {
+  padding: 4rem 4rem 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-page-title {
+  font-size: 5rem;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5rem;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 4px 4px 0px rgba(255,255,255,0.2);
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about-description p, .thanks-description p {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.thanks-description p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Faculty Grid */
+.faculty-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem 2rem;
+  max-width: 900px;
+}
+
+.faculty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  gap: 1rem;
+}
+
+.faculty-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.faculty-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.2rem;
+}
+
+.faculty-name {
+  font-size: 1.1rem;
+}
+
+.faculty-title {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Sponsor Grid */
+.sponsor-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .sponsor-grid {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 0.5rem;
+  }
+}
+
+.sponsor-logo-box {
+  height: 85px;
+  width: 250px;
+  background-color: #a0a4a8; /* Greyish background as requested */
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.sponsor-logo-box:hover {
+  transform: translateY(-2px);
+}
+
+.sponsor-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.sponsor-logo-box.icle-box {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 0;
+}
+
+.sponsor-logo-img.icle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+

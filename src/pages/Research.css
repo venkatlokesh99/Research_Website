@@ -1,0 +1,24 @@
+.research-page-title {
+  font-size: 5rem;
+  margin-top: 5rem;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 4px 4px 0px rgba(255,255,255,0.2);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.research-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
+  width: 100%;
+}

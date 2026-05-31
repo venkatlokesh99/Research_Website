@@ -1,0 +1,67 @@
+.about-page {
+  padding: 5rem 5rem 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.about-header {
+  font-size: clamp(3rem, 5vw, 5rem);
+  margin-top: 5rem;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 4px 4px 0px rgba(255,255,255,0.2);
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.section-title {
+  font-family: var(--font-wire);
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--accent-grey);
+}
+
+.literature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.our-work-section {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-work-column {
+  flex: 1;
+  font-family: 'Times New Roman', serif;
+  font-size: 1.25rem;
+}
+
+.our-work-divider {
+  width: 2px;
+  background-color: white;
+  min-height: 240px;
+}
