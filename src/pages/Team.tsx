@@ -21,7 +21,7 @@ const teamMembers: { name: string; image?: string }[] = [
   { name: 'Katherine Marin',  image: katherineImg },
   { name: 'Lila Greenberg',   image: lilaImg },
   { name: 'Julie Wittenberg', image: julieImg },
-  { name: 'Jim Harperr',     image: jimImg },
+  { name: 'Jim Harper',     image: jimImg },
   { name: 'Jessica Sparks',  image: jessicaImg },
   { name: 'Jieun Shin',      image: jieunImg },
   { name: 'Jane Bambauer',   image: janeImg },
