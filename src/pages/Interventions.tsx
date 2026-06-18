@@ -20,7 +20,7 @@ export default function Interventions() {
       <div>
         <h2 className="section-title">RELEVANT LITERATURE</h2>
         <div className="literature-grid">
-          <LiteratureCard title={"INTERVENTIONS"} bgPattern="bg-interventions-1 align-bottom" textColor="#8bf0ff" />
+          <LiteratureCard title={"INTERVENTIONS"} bgPattern="bg-interventions-1 align-bottom" textColor="#8bf0ff" link="https://docs.google.com/spreadsheets/d/14uZLGmrgj2qsuMEu6amvTffC-1EeZWsZaaZJpkS11H8/edit?gid=907503143#gid=907503143" />
           <LiteratureCard title={"NEW\nINSTITUTIONS"} bgPattern="bg-ribbons" textColor="#ffffff" />
           <LiteratureCard title={""} bgPattern="bg-interventions-3" textColor="transparent" />
         </div>
@@ -29,7 +29,7 @@ export default function Interventions() {
       <div>
         <h2 className="section-title">OUR WORK</h2>
         <div className="our-work-section">
-          <OurWorkCard title={"ARTICLE:\nTHE DEMAND\nFOR BULLSHIT"} bgPattern="bg-purple-circles" textColor="#a8f0f8" />
+          <OurWorkCard title={"ARTICLE:\nTHE DEMAND\nFOR BULLSHIT"} bgPattern="bg-purple-circles" textColor="#a8f0f8" link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6194318" />
           <div className="our-work-divider"></div>
           <OurWorkCard title={"WORK IN\nPROGRESS:\nUSING LLMS TO\nSCORE NEWS AND\nOPINION MEDIA"} bgPattern="bg-soundwave" textColor="#00ffff" />
           <OurWorkCard title={"WORK IN\nPROGRESS:\nWHAT FACTUAL\nADJUDICATION RULES\nARE MOST TRUSTED?"} bgPattern="bg-dots" textColor="#a8f0f8" />

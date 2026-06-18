@@ -156,3 +156,97 @@
   font-weight: normal;
   letter-spacing: 1px;
 }
+
+@media (max-width: 767px) {
+  .pink-splatter-bg {
+    left: 0;
+    width: 100%;
+    height: 40vh; /* Reduced height to avoid overlapping with questions */
+    min-height: auto;
+    overflow: hidden;
+    opacity: 0.9;
+  }
+
+  .home-hero {
+    height: auto;
+    min-height: 250px;
+    margin-left: 0;
+    padding: 4rem 1rem 0rem 1rem;
+    align-items: center;
+  }
+
+  .hero-subtitle {
+    white-space: normal !important;
+    text-align: center;
+    margin-left: 0 !important;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    max-width: 280px;
+  }
+
+  .hero-title {
+    align-items: center !important;
+  }
+
+  .hero-title .top-word {
+    font-size: 2.8rem !important;
+    margin-top: 0.8rem;
+  }
+
+  .hero-title .small-word {
+    font-size: 1.3rem !important;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .hero-title .bottom-word {
+    font-size: 3.5rem !important;
+  }
+
+  .home-content {
+    margin-top: 6rem; /* Pushes content down safely below the pink splatter */
+    padding-left: 0 !important;
+    padding: 0 1.5rem;
+    gap: 2.2rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .question-item {
+    margin-left: 0 !important;
+    width: 100%;
+    align-items: center;
+  }
+
+  .question-header {
+    font-size: 1.55rem !important; /* Increased font-size for better visibility */
+    text-align: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: #ffffff !important; /* High contrast white text */
+    -webkit-text-stroke: 0.25px #ffffff; /* Slightly thickens the thin wire outline font to prevent blurriness */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+  }
+
+  .question-header.clickable:active {
+    color: var(--accent-pink) !important; /* Flash pink on tap */
+  }
+
+  .arrow-icon {
+    color: var(--accent-pink) !important; /* Styled arrow to stand out */
+  }
+
+  .arrow-icon svg {
+    width: 1.1em;
+    height: 0.55em;
+  }
+
+  .home-footer {
+    margin-top: 3.5rem !important; /* Move footer closer to the questions instead of floating to screen bottom */
+    padding: 1.5rem 1rem 2.5rem 1rem !important;
+  }
+
+  .home-footer-text {
+    font-size: 1.3rem !important;
+  }
+}

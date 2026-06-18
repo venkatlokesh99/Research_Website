@@ -4,9 +4,10 @@ interface LiteratureCardProps {
   title: string;
   bgPattern: string; // CSS class for background pattern
   textColor: string;
+  link?: string;
 }
 
-export default function LiteratureCard({ title, bgPattern, textColor }: LiteratureCardProps) {
+export default function LiteratureCard({ title, bgPattern, textColor, link }: LiteratureCardProps) {
   const isTitleSplit = title.includes('\n');
   const lines = isTitleSplit ? title.split('\n') : [title];
   const maxLength = Math.max(...lines.map(line => line.length));
@@ -20,7 +21,7 @@ export default function LiteratureCard({ title, bgPattern, textColor }: Literatu
     fontSize = '2.0rem';
   }
   
-  return (
+  const cardContent = (
     <div className={`lit-card ${bgPattern}`}>
       <h3 className="lit-card-text staatliches-tags" style={{ color: textColor, fontSize: fontSize }}>
         {isTitleSplit ? (
@@ -33,4 +34,14 @@ export default function LiteratureCard({ title, bgPattern, textColor }: Literatu
       </h3>
     </div>
   );
+
+  if (link) {
+    return (
+      <a href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+        {cardContent}
+      </a>
+    );
+  }
+
+  return cardContent;
 }

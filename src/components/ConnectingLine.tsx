@@ -53,6 +53,7 @@ export default function ConnectingLine() {
     };
   }, [location.pathname, windowWidth, windowHeight]);
 
+  if (windowWidth < 768) return null;
   const routeData = routeMappings[location.pathname];
   if (!routeData) return null;
 

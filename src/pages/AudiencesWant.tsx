@@ -20,18 +20,18 @@ export default function AudiencesWant() {
       <div>
         <h2 className="section-title">RELEVANT LITERATURE</h2>
         <div className="literature-grid">
-          <LiteratureCard title={"SOCIAL &\nPSYCHOLOGICAL\nEXPLANATIONS"} bgPattern="bg-ribbons" textColor="#a8f0f8" />
-          <LiteratureCard title={"PREFERENCE\nFALSIFICATION"} bgPattern="bg-palette" textColor="#a8f0f8" />
-          <LiteratureCard title={"BULLSHIT\nDEFINED"} bgPattern="bg-starburst" textColor="#d4b3f8" />
+          <LiteratureCard title={"SOCIAL &\nPSYCHOLOGICAL\nEXPLANATIONS"} bgPattern="bg-ribbons" textColor="#a8f0f8" link="https://docs.google.com/spreadsheets/d/14uZLGmrgj2qsuMEu6amvTffC-1EeZWsZaaZJpkS11H8/edit?gid=1311535512#gid=1311535512" />
+          <LiteratureCard title={"PREFERENCE\nFALSIFICATION"} bgPattern="bg-palette" textColor="#a8f0f8" link="https://docs.google.com/spreadsheets/d/14uZLGmrgj2qsuMEu6amvTffC-1EeZWsZaaZJpkS11H8/edit?gid=2114665819#gid=2114665819" />
+          <LiteratureCard title={"BULLSHIT\nDEFINED"} bgPattern="bg-starburst" textColor="#d4b3f8" link="https://docs.google.com/spreadsheets/d/14uZLGmrgj2qsuMEu6amvTffC-1EeZWsZaaZJpkS11H8/edit?gid=833036648#gid=833036648" />
         </div>
       </div>
 
       <div>
         <h2 className="section-title">OUR WORK</h2>
         <div className="our-work-section">
-          <OurWorkCard title={"ARTICLE:\nTHE DEMAND\nFOR BULLSHIT"} bgPattern="bg-purple-circles" textColor="#a8f0f8" />
+          <OurWorkCard title={"ARTICLE:\nTHE DEMAND\nFOR BULLSHIT"} bgPattern="bg-purple-circles" textColor="#a8f0f8" link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6194318" />
           <div className="our-work-divider"></div>
-          <OurWorkCard title={"ESSAY:\nTHE DEMAND FOR\nBULLSHIT UNDER\nAMERICAN AND\nEUROPEAN LAW"} bgPattern="bg-dark-grid" textColor="#a8f0f8" />
+          <OurWorkCard title={"ESSAY:\nTHE DEMAND FOR\nBULLSHIT UNDER\nAMERICAN AND\nEUROPEAN LAW"} bgPattern="bg-dark-grid" textColor="#a8f0f8" link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6858718" />
           <OurWorkCard title={"CHAPTER:\nTHE DEMAND FOR\nBULLSHIT"} bgPattern="bg-red-grid" textColor="#a8f0f8" />
         </div>
       </div>

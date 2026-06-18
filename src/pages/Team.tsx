@@ -14,19 +14,19 @@ import janeImg from '../assets/Team/jane-bambauer.png';
 import myiahImg from '../assets/Team/myiah-hutchens.png';
 import lyrissaImg from '../assets/Team/lyrissa-lidsky.png';
 
-const teamMembers: { name: string; image?: string }[] = [
-  { name: 'Lokesh Vejendla', image: lokeshImg },
-  { name: 'Abhi Gorle',      image: abhiImg },
-  { name: 'Andi Bettinger',  image: andiImg },
-  { name: 'Katherine Marin',  image: katherineImg },
-  { name: 'Lila Greenberg',   image: lilaImg },
-  { name: 'Julie Wittenberg', image: julieImg },
-  { name: 'Jim Harper',     image: jimImg },
-  { name: 'Jessica Sparks',  image: jessicaImg },
-  { name: 'Jieun Shin',      image: jieunImg },
-  { name: 'Jane Bambauer',   image: janeImg },
-  { name: 'Myiah Hutchens',  image: myiahImg },
-  { name: 'Lyrissa Lidsky',  image: lyrissaImg },
+const teamMembers: { name: string; image?: string; email: string; affiliation: string }[] = [
+  { name: 'Lokesh Vejendla', image: lokeshImg, email: 'vvejendla@ufl.edu', affiliation: 'AI Research Engineer, University of Florida' },
+  { name: 'Abhiram Gorle',      image: abhiImg, email: 'du.gorle@ufl.edu', affiliation: 'AI Research Engineer, University of Florida' },
+  { name: 'Andi Bettinger',  image: andiImg, email: 'andi.bettinger@ufl.edu', affiliation: 'Research Specialist, University of Florida' },
+  { name: 'Katherine Marin',  image: katherineImg, email: 'katherine.m@ufl.edu', affiliation: 'University of Florida' },
+  { name: 'Lila Greenberg',   image: lilaImg, email: 'lilagreenberg@ufl.edu', affiliation: 'Research Assistant, University of Florida' },
+  { name: 'Julie Wittenberg', image: julieImg, email: 'jwittenberg@ufl.edu', affiliation: 'Research Assistant, University of Florida' },
+  { name: 'Jim Harper',     image: jimImg, email: 'jim.harper@gmail.com', affiliation: 'University of Florida and American Enterprise Institute' },
+  { name: 'Jessica Sparks',  image: jessicaImg, email: 'jfs0048@auburn.edu', affiliation: 'Assistant Professor, Journalism, Auburn University' },
+  { name: 'Jieun Shin',      image: jieunImg, email: 'jieun.shin@ufl.edu', affiliation: 'Associate Professor, Department of Media Production, Management, and Technology, University of Florida' },
+  { name: 'Jane Bambauer',   image: janeImg, email: 'janebambauer@ufl.edu', affiliation: 'Professor of Law, UF Levin College of Law' },
+  { name: 'Myiah Hutchens',  image: myiahImg, email: 'myiahhutchens@ufl.edu', affiliation: 'Associate Professor and Chair - Department of Public Relations, University of Florida' },
+  { name: 'Lyrissa Barnett Lidsky',  image: lyrissaImg, email: 'lidsky@law.ufl.edu', affiliation: 'Professor of Law, UF Levin College of Law' },
 ];
 
 export default function Team() {
@@ -38,7 +38,7 @@ export default function Team() {
 
       <div className="team-container">
         <div className="team-grid">
-          {teamMembers.map(({ name, image }, index) => (
+          {teamMembers.map(({ name, image, email, affiliation }, index) => (
             <div key={index} className="team-member-placeholder">
               <div className="team-photo-box">
                 {image ? (
@@ -46,6 +46,14 @@ export default function Team() {
                 ) : (
                   <span className="placeholder-text">{name.split(' ')[0].toUpperCase()}</span>
                 )}
+                <div className="team-overlay">
+                  <div className="team-overlay-affiliation">
+                    {affiliation.split(',').map((part, i) => (
+                      <span key={i} className="affiliation-line">{part.trim()}</span>
+                    ))}
+                  </div>
+                  <span className="team-overlay-email">{email}</span>
+                </div>
               </div>
               <p className="team-member-name">{name}</p>
             </div>

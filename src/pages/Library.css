@@ -69,3 +69,11 @@
   gap: 2.5rem;
   width: 100%;
 }
+
+@media (max-width: 767px) {
+  .library-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+  }
+}

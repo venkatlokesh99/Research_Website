@@ -3,8 +3,7 @@ import PunkHeader from '../components/PunkHeader';
 import faculty1 from '../assets/Team/jane-bambauer.png';
 import faculty2 from '../assets/Team/lyrissa-lidsky.png';
 import faculty3 from '../assets/Team/myiah-hutchens.png';
-import faculty4 from '../assets/Team/jim-harperr.png';
-import faculty5 from '../assets/Team/jieun-shin.png';
+import faculty4 from '../assets/Team/jieun-shin.png';
 import sponsorUfLevin from '../assets/sponsor-uf-levin.png';
 import sponsorUfBrechner from '../assets/sponsor-uf-brechner.png';
 import sponsorKnight from '../assets/sponsor-knight.png';
@@ -31,35 +30,28 @@ export default function About() {
             <img src={faculty1} alt="Jane Bambauer" className="faculty-image" />
             <div className="faculty-info pagella-body">
               <span className="faculty-name">Jane Bambauer</span>
-              <span className="faculty-title">Law</span>
+              <span className="faculty-title">Professor of Law, Associate Dean for Strategy and Innovation</span>
             </div>
           </div>
           <div className="faculty-card">
-            <img src={faculty2} alt="Lyrissa Lidsky" className="faculty-image" />
+            <img src={faculty2} alt="Lyrissa Barnett Lidsky" className="faculty-image" />
             <div className="faculty-info pagella-body">
-              <span className="faculty-name">Lyrissa Lidsky</span>
-              <span className="faculty-title">Law</span>
+              <span className="faculty-name">Lyrissa Barnett Lidsky</span>
+              <span className="faculty-title">Raymond & Miriam Ehrlich Eminent Scholar Chair in U.S. Constitutional Law, Professor of Law</span>
             </div>
           </div>
           <div className="faculty-card">
-            <img src={faculty3} alt="Myiah Hutchens" className="faculty-image" />
+            <img src={faculty3} alt="Myiah Hutchens, Ph.D." className="faculty-image" />
             <div className="faculty-info pagella-body">
-              <span className="faculty-name">Myiah Hutchens</span>
-              <span className="faculty-title">Public Relations</span>
+              <span className="faculty-name">Myiah Hutchens, Ph.D.</span>
+              <span className="faculty-title">Associate Professor and Chair - Department of Public Relations</span>
             </div>
           </div>
           <div className="faculty-card">
-            <img src={faculty4} alt="Jim Harper" className="faculty-image" />
+            <img src={faculty4} alt="Jieun Shin, Ph.D." className="faculty-image" />
             <div className="faculty-info pagella-body">
-              <span className="faculty-name">Jim Harper</span>
-              <span className="faculty-title">Research Director</span>
-            </div>
-          </div>
-          <div className="faculty-card">
-            <img src={faculty5} alt="Jieun Shin" className="faculty-image" />
-            <div className="faculty-info pagella-body">
-              <span className="faculty-name">Jieun Shin</span>
-              <span className="faculty-title">Media Production,<br/>Management, and Technology</span>
+              <span className="faculty-name">Jieun Shin, Ph.D.</span>
+              <span className="faculty-title">Associate Professor - Department of Media Production, Management, and Technology</span>
             </div>
           </div>
         </div>

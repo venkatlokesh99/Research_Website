@@ -22,3 +22,31 @@
   transform: scale(1.02);
   opacity: 0.9;
 }
+
+@media (max-width: 767px) {
+  .top-banner-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: auto;
+    max-width: calc(100% - 145px);
+    margin-bottom: 0;
+    padding-top: 0;
+    text-align: left;
+    box-sizing: border-box;
+    z-index: 900;
+  }
+
+  .pink-banner-header {
+    font-size: 1.25rem !important;
+    padding: 0.5rem 1rem !important;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform: rotate(-2deg);
+    box-shadow: 4px 4px 0px white;
+  }
+}

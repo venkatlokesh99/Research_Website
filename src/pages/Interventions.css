@@ -13,3 +13,10 @@
   transform: translateX(-5vw);
 }
 
+@media (max-width: 767px) {
+  .int-title {
+    transform: none !important;
+    margin-top: 1rem !important;
+  }
+}
+

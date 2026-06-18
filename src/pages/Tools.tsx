@@ -54,10 +54,10 @@ export default function Tools() {
       <div className="about-section">
         <h2 className="section-title">RELEVANT LITERATURE</h2>
         <div className="literature-grid lit-4-cols">
-          <LiteratureCard title={"MEASURES\nOF SOURCE\nQUALITY"} bgPattern="bg-how-1" textColor="#8bf0ff" />
-          <LiteratureCard title={"MEASURES\nOF AUDIENCE\nQUALITY"} bgPattern="bg-how-3" textColor="#ff5252" />
-          <LiteratureCard title={"LLM TOOLS"} bgPattern="bg-how-2" textColor="#ffffff" />
-          <LiteratureCard title={"INTERVENTIONS"} bgPattern="bg-interventions-1 align-bottom" textColor="#8bf0ff" />
+          <LiteratureCard title={"MEASURES\nOF SOURCE\nQUALITY"} bgPattern="bg-how-1" textColor="#8bf0ff" link="https://docs.google.com/spreadsheets/d/14uZLGmrgj2qsuMEu6amvTffC-1EeZWsZaaZJpkS11H8/edit?gid=1205722365#gid=1205722365" />
+          <LiteratureCard title={"MEASURES\nOF AUDIENCE\nQUALITY"} bgPattern="bg-how-3" textColor="#ff5252" link="https://docs.google.com/spreadsheets/d/14uZLGmrgj2qsuMEu6amvTffC-1EeZWsZaaZJpkS11H8/edit?gid=566497843#gid=566497843" />
+          <LiteratureCard title={"LLM TOOLS"} bgPattern="bg-how-2" textColor="#ffffff" link="https://docs.google.com/spreadsheets/d/14uZLGmrgj2qsuMEu6amvTffC-1EeZWsZaaZJpkS11H8/edit?gid=1344202204#gid=1344202204" />
+          <LiteratureCard title={"INTERVENTIONS"} bgPattern="bg-interventions-1 align-bottom" textColor="#8bf0ff" link="https://docs.google.com/spreadsheets/d/14uZLGmrgj2qsuMEu6amvTffC-1EeZWsZaaZJpkS11H8/edit?gid=907503143#gid=907503143" />
         </div>
       </div>
     </div>

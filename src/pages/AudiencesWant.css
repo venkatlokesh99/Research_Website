@@ -13,3 +13,10 @@
   transform: translateX(-6vw);
 }
 
+@media (max-width: 767px) {
+  .audi-title {
+    transform: none !important;
+    margin-top: 1rem !important;
+  }
+}
+

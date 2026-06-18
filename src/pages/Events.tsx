@@ -26,14 +26,22 @@ export default function Events() {
 
         {/* TMPL 2026 — right side */}
         <div className="ev-past-top">
-          <img src={tmpl2026} alt="TMPL 2026" className="ev-past-lg-img" />
+          <a href="https://law.ufl.edu/about/events-and-workshops/tmpl-2026/" target="_blank" rel="noopener noreferrer">
+            <img src={tmpl2026} alt="TMPL 2026" className="ev-past-lg-img" style={{ cursor: 'pointer' }} />
+          </a>
         </div>
 
         {/* Bottom row: TMPL 2025 · Fifth Column · Open Socrates */}
         <div className="ev-past-bottom">
-          <img src={tmpl2025}  alt="TMPL 2025"        className="ev-past-sm-img" />
-          <img src={fifthCol}  alt="The Fifth Column" className="ev-past-sm-img" />
-          <img src={openSoc}   alt="Open Socrates"    className="ev-past-book-img" />
+          <a href="https://law.ufl.edu/about/events-and-workshops/tmpl-2025/" target="_blank" rel="noopener noreferrer">
+            <img src={tmpl2025}  alt="TMPL 2025"        className="ev-past-sm-img" style={{ cursor: 'pointer' }} />
+          </a>
+          <a href="https://www.wethefifth.com/" target="_blank" rel="noopener noreferrer">
+            <img src={fifthCol}  alt="The Fifth Column" className="ev-past-sm-img" style={{ cursor: 'pointer' }} />
+          </a>
+          <a href="https://wwnorton.com/books/open-socrates" target="_blank" rel="noopener noreferrer">
+            <img src={openSoc}   alt="Open Socrates"    className="ev-past-book-img" style={{ cursor: 'pointer' }} />
+          </a>
         </div>
       </div>
 

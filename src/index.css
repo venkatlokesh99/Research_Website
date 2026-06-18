@@ -196,3 +196,29 @@ a {
   display: block;
   white-space: nowrap;
 }
+
+@media (max-width: 767px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .main-content {
+    width: 100%;
+    min-height: auto;
+    padding-top: 60px; /* Leave space for fixed MENU button */
+  }
+
+  /* Scale halftone headings generally on mobile */
+  .halftone-title {
+    font-size: 2.4rem !important;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 1rem;
+    word-break: break-word;
+  }
+
+  .title-line {
+    white-space: normal !important;
+    display: inline-block;
+  }
+}

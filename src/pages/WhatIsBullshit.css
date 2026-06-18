@@ -65,3 +65,37 @@
   background-color: white;
   min-height: 240px;
 }
+
+@media (max-width: 767px) {
+  .about-page {
+    padding: 2rem 1.5rem 6rem 1.5rem !important;
+    gap: 2rem !important;
+  }
+
+  .about-description {
+    font-size: 1.1rem !important;
+    line-height: 1.5 !important;
+    padding: 0 0.5rem !important;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  .literature-grid {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+  }
+
+  .our-work-section {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important;
+  }
+
+  .our-work-divider {
+    display: none !important;
+  }
+}
