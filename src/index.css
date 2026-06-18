@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Barabara';
-  src: url('./assets/Barabara.ttf') format('truetype');
+  src: url('./assets/Barabara.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,30 +23,16 @@
 
 @font-face {
   font-family: 'Text Gyre Pagella';
-  src: url('./assets/texgyrepagella-regular.otf') format('opentype');
+  src: url('./assets/texgyrepagella-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Text Gyre Pagella';
-  src: url('./assets/texgyrepagella-bold.otf') format('opentype');
+  font-family: 'Rig Solid Bold Halftone';
+  src: url('./assets/RigSolid-BoldHalftone.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Text Gyre Pagella';
-  src: url('./assets/texgyrepagella-italic.otf') format('opentype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Text Gyre Pagella';
-  src: url('./assets/texgyrepagella-bolditalic.otf') format('opentype');
-  font-weight: bold;
-  font-style: italic;
 }
 
 :root {
@@ -114,6 +100,10 @@ a {
   font-family: var(--font-title-halftone);
   text-transform: uppercase;
   font-weight: normal;
+  color: white;
+  -webkit-text-stroke: 0px transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.45)) drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.25));
 }
 
 .pagella-body {
