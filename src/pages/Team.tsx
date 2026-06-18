@@ -18,7 +18,7 @@ const teamMembers: { name: string; image?: string; email: string; affiliation: s
   { name: 'Lokesh Vejendla', image: lokeshImg, email: 'vvejendla@ufl.edu', affiliation: 'AI Research Engineer, University of Florida' },
   { name: 'Abhiram Gorle',      image: abhiImg, email: 'du.gorle@ufl.edu', affiliation: 'AI Research Engineer, University of Florida' },
   { name: 'Andi Bettinger',  image: andiImg, email: 'andi.bettinger@ufl.edu', affiliation: 'Research Specialist, University of Florida' },
-  { name: 'Katherine Marin',  image: katherineImg, email: 'katherine.m@ufl.edu', affiliation: 'University of Florida' },
+  { name: 'Katherine Marin',  image: katherineImg, email: 'katherine.m@ufl.edu', affiliation: 'Research Assistant, University of Florida' },
   { name: 'Lila Greenberg',   image: lilaImg, email: 'lilagreenberg@ufl.edu', affiliation: 'Research Assistant, University of Florida' },
   { name: 'Julie Wittenberg', image: julieImg, email: 'jwittenberg@ufl.edu', affiliation: 'Research Assistant, University of Florida' },
   { name: 'Jim Harper',     image: jimImg, email: 'jim.harper@gmail.com', affiliation: 'University of Florida and American Enterprise Institute' },
