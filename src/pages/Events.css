@@ -96,9 +96,30 @@
 
 /* ═══════════════════════════════════════
    MAILING LIST
-═══════════════════════════════════════ */
+   ═══════════════════════════════════════ */
 .ev-mailing {
   padding: 3rem 5rem 4rem 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ev-mailing-title {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.25s ease, transform 0.25s ease, text-shadow 0.25s ease;
+  user-select: none;
+}
+
+.ev-mailing-title:hover,
+.ev-mailing-title:focus-visible {
+  color: var(--accent-pink);
+  transform: scale(1.06);
+  text-shadow: 0 0 10px rgba(255, 85, 179, 0.4);
+}
+
+.ev-mailing-title:active {
+  transform: scale(0.98);
 }
 
 @media (max-width: 767px) {

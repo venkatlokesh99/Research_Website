@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import './Events.css';
 import PunkHeader from '../components/PunkHeader';
+import MailingListModal from '../components/MailingListModal';
 
 import tmpl2027   from '../assets/Events/tmpl-2027.png';
 import tmpl2026   from '../assets/Events/tmpl-2026.png';
@@ -8,6 +10,8 @@ import fifthCol   from '../assets/Events/event-past-3.png';
 import openSoc    from '../assets/Events/event-past-4.png';
 
 export default function Events() {
+  const [isMailingModalOpen, setIsMailingModalOpen] = useState(false);
+
   return (
     <div className="about-page-real">
       <PunkHeader />
@@ -47,8 +51,29 @@ export default function Events() {
 
       {/* ── MAILING LIST ── */}
       <div className="ev-mailing">
-        <h2 className="section-title">JOIN OUR MAILING LIST</h2>
+        <h2 
+          className="section-title ev-mailing-title"
+          onClick={() => setIsMailingModalOpen(true)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              setIsMailingModalOpen(true);
+            }
+          }}
+          aria-haspopup="dialog"
+        >
+          JOIN OUR MAILING LIST
+        </h2>
       </div>
+
+      {/* ── MAILING LIST POPUP MODAL ── */}
+      <MailingListModal 
+        isOpen={isMailingModalOpen}
+        onClose={() => setIsMailingModalOpen(false)}
+      />
     </div>
   );
 }
+
