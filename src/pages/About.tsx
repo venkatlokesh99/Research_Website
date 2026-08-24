@@ -4,6 +4,7 @@ import faculty1 from '../assets/Team/jane-bambauer.png';
 import faculty2 from '../assets/Team/lyrissa-lidsky.png';
 import faculty3 from '../assets/Team/myiah-hutchens.png';
 import faculty4 from '../assets/Team/jieun-shin.png';
+import faculty5 from '../assets/Team/molk-peter.png';
 import sponsorUfLevin from '../assets/sponsor-uf-levin.png';
 import sponsorUfBrechner from '../assets/sponsor-uf-brechner.png';
 import sponsorKnight from '../assets/sponsor-knight.png';
@@ -54,6 +55,15 @@ export default function About() {
               <span className="faculty-title">Associate Professor - Department of Media Production, Management, and Technology</span>
             </div>
           </div>
+          <a href="http://law.ufl.edu/faculty/peter-molk/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div className="faculty-card">
+              <img src={faculty5} alt="Peter Molk" className="faculty-image" />
+              <div className="faculty-info pagella-body">
+                <span className="faculty-name">Peter Molk</span>
+                <span className="faculty-title">Professor of Law, UF Levin College of Law</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
 

@@ -24,6 +24,25 @@
   transform: scale(1.05) rotate(-1deg);
 }
 
+.ev-upcoming-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #fff;
+}
+
+.ev-upcoming-event-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin: 0 0 0.4rem 0;
+}
+
+.ev-upcoming-details p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 /* ═══════════════════════════════════════
    PAST EVENTS SECTION
    Loose, flowing layout — no strict grid
@@ -31,14 +50,14 @@
 .ev-past-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
   padding: 1.5rem 5rem 1rem 5rem;
 }
 
-/* TMPL 2026 — pushed to the right */
 .ev-past-top {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .ev-past-lg-img {
@@ -55,11 +74,11 @@
   transform: scale(1.05) rotate(1deg);
 }
 
-/* Bottom row: 3 cards, right-aligned, natural spacing */
+/* Bottom row: 3 cards, centered */
 .ev-past-bottom {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
   gap: 2rem;
 }

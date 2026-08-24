@@ -30,7 +30,7 @@ export default function AudiencesWant() {
         <h2 className="section-title">OUR WORK</h2>
         <div className="our-work-section">
           <OurWorkCard title={"ARTICLE:\nTHE DEMAND\nFOR BULLSHIT"} bgPattern="bg-purple-circles" textColor="#a8f0f8" link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6194318" />
-          <div className="our-work-divider"></div>
+          {/* <div className="our-work-divider"></div> */}
           <OurWorkCard title={"ESSAY:\nTHE DEMAND FOR\nBULLSHIT UNDER\nAMERICAN AND\nEUROPEAN LAW"} bgPattern="bg-dark-grid" textColor="#a8f0f8" link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6858718" />
           <OurWorkCard title={"CHAPTER:\nTHE DEMAND FOR\nBULLSHIT"} bgPattern="bg-red-grid" textColor="#a8f0f8" />
         </div>

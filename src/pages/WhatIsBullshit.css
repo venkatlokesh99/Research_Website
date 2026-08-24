@@ -42,26 +42,13 @@
 }
 
 .our-work-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  gap: 2.5rem;
   justify-content: center;
-  gap: 5rem;
   margin-top: 2rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.our-work-column {
-  flex: 1;
-  font-family: 'Times New Roman', serif;
-  font-size: 1.25rem;
-}
-
-.our-work-divider {
-  width: 2px;
-  background-color: white;
-  min-height: 240px;
-}
 
 @media (max-width: 767px) {
   .about-page {
@@ -87,12 +74,7 @@
   }
 
   .our-work-section {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 2rem !important;
-  }
-
-  .our-work-divider {
-    display: none !important;
+    grid-template-columns: repeat(2, 240px) !important;
+    gap: 1.5rem !important;
   }
 }

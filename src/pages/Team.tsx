@@ -13,8 +13,12 @@ import jieunImg from '../assets/Team/jieun-shin.png';
 import janeImg from '../assets/Team/jane-bambauer.png';
 import myiahImg from '../assets/Team/myiah-hutchens.png';
 import lyrissaImg from '../assets/Team/lyrissa-lidsky.png';
+import molkImg from '../assets/Team/molk-peter.png';
 
-const teamMembers: { name: string; image?: string; email: string; affiliation: string }[] = [
+const teamMembers: { name: string; image?: string; email: string; affiliation: string; link?: string }[] = [
+  { name: 'Jane Bambauer',   image: janeImg, email: 'janebambauer@ufl.edu', affiliation: 'Professor of Law, UF Levin College of Law' },
+  { name: 'Myiah Hutchens',  image: myiahImg, email: 'myiahhutchens@ufl.edu', affiliation: 'Associate Professor and Chair - Department of Public Relations, University of Florida' },
+  { name: 'Lyrissa Barnett Lidsky',  image: lyrissaImg, email: 'lidsky@law.ufl.edu', affiliation: 'Professor of Law, UF Levin College of Law' },
   { name: 'Lokesh Vejendla', image: lokeshImg, email: 'vvejendla@ufl.edu', affiliation: 'AI Research Engineer, University of Florida' },
   { name: 'Abhiram Gorle',      image: abhiImg, email: 'du.gorle@ufl.edu', affiliation: 'AI Research Engineer, University of Florida' },
   { name: 'Andi Bettinger',  image: andiImg, email: 'andi.bettinger@ufl.edu', affiliation: 'Research Specialist, University of Florida' },
@@ -24,9 +28,7 @@ const teamMembers: { name: string; image?: string; email: string; affiliation: s
   { name: 'Jim Harper',     image: jimImg, email: 'jim.harper@gmail.com', affiliation: 'University of Florida and American Enterprise Institute' },
   { name: 'Jessica Sparks',  image: jessicaImg, email: 'jfs0048@auburn.edu', affiliation: 'Assistant Professor, Journalism, Auburn University' },
   { name: 'Jieun Shin',      image: jieunImg, email: 'jieun.shin@ufl.edu', affiliation: 'Associate Professor, Department of Media Production, Management, and Technology, University of Florida' },
-  { name: 'Jane Bambauer',   image: janeImg, email: 'janebambauer@ufl.edu', affiliation: 'Professor of Law, UF Levin College of Law' },
-  { name: 'Myiah Hutchens',  image: myiahImg, email: 'myiahhutchens@ufl.edu', affiliation: 'Associate Professor and Chair - Department of Public Relations, University of Florida' },
-  { name: 'Lyrissa Barnett Lidsky',  image: lyrissaImg, email: 'lidsky@law.ufl.edu', affiliation: 'Professor of Law, UF Levin College of Law' },
+  { name: 'Peter Molk', image: molkImg, email: '', affiliation: 'Professor of Law, UF Levin College of Law', link: 'http://law.ufl.edu/faculty/peter-molk/' },
 ];
 
 export default function Team() {
@@ -38,8 +40,8 @@ export default function Team() {
 
       <div className="team-container">
         <div className="team-grid">
-          {teamMembers.map(({ name, image, email, affiliation }, index) => (
-            <div key={index} className="team-member-placeholder">
+          {teamMembers.map(({ name, image, email, affiliation, link }, index) => {
+            const photoBox = (
               <div className="team-photo-box">
                 {image ? (
                   <img src={image} alt={name} className="team-photo-img" />
@@ -52,12 +54,25 @@ export default function Team() {
                       <span key={i} className="affiliation-line">{part.trim()}</span>
                     ))}
                   </div>
-                  <span className="team-overlay-email">{email}</span>
+                  {email && <span className="team-overlay-email">{email}</span>}
                 </div>
               </div>
-              <p className="team-member-name">{name}</p>
-            </div>
-          ))}
+            );
+            if (link) {
+              return (
+                <a key={index} href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }} className="team-member-placeholder">
+                  {photoBox}
+                  <p className="team-member-name">{name}</p>
+                </a>
+              );
+            }
+            return (
+              <div key={index} className="team-member-placeholder">
+                {photoBox}
+                <p className="team-member-name">{name}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import './Interventions.css';
 import PunkHeader from '../components/PunkHeader';
 import LiteratureCard from '../components/LiteratureCard';
 import OurWorkCard from '../components/OurWorkCard';
+import gradingPdf from '../assets/Grading-Predictions-Penn-May2026.pdf';
 
 export default function Interventions() {
   return (
@@ -30,9 +31,9 @@ export default function Interventions() {
         <h2 className="section-title">OUR WORK</h2>
         <div className="our-work-section">
           <OurWorkCard title={"ARTICLE:\nTHE DEMAND\nFOR BULLSHIT"} bgPattern="bg-purple-circles" textColor="#a8f0f8" link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6194318" />
-          <div className="our-work-divider"></div>
-          <OurWorkCard title={"WORK IN\nPROGRESS:\nUSING LLMS TO\nSCORE NEWS AND\nOPINION MEDIA"} bgPattern="bg-soundwave" textColor="#00ffff" />
-          <OurWorkCard title={"WORK IN\nPROGRESS:\nWHAT FACTUAL\nADJUDICATION RULES\nARE MOST TRUSTED?"} bgPattern="bg-dots" textColor="#a8f0f8" />
+          {/* <div className="our-work-divider"></div> */}
+          <OurWorkCard title={"WORK IN\nPROGRESS:\nUSING LLMS TO\nSCORE NEWS AND\nOPINION MEDIA"} bgPattern="bg-soundwave" textColor="#00ffff" link={gradingPdf} />
+          <OurWorkCard title={"ARTICLE:\nUser perceptions of credibility signals"} bgPattern="bg-dots" textColor="#a8f0f8" link="https://www.sciencedirect.com/science/article/pii/S0160791X26000412" />
         </div>
       </div>
     </div>

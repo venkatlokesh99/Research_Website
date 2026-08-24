@@ -2,6 +2,7 @@ import './HowToKnow.css';
 import PunkHeader from '../components/PunkHeader';
 import LiteratureCard from '../components/LiteratureCard';
 import OurWorkCard from '../components/OurWorkCard';
+import gradingPdf from '../assets/Grading-Predictions-Penn-May2026.pdf';
 
 export default function HowToKnow() {
   return (
@@ -30,8 +31,9 @@ export default function HowToKnow() {
         <h2 className="section-title">OUR WORK</h2>
         <div className="our-work-section">
           <OurWorkCard title={"ARTICLE:\nTHE DEMAND\nFOR BULLSHIT"} bgPattern="bg-purple-circles" textColor="#a8f0f8" link="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6194318" />
-          <div className="our-work-divider"></div>
-          <OurWorkCard title={"WORK IN\nPROGRESS:\nUSING LLMS TO\nSCORE NEWS AND\nOPINION MEDIA"} bgPattern="bg-sunburst" textColor="#00ffff" />
+          {/* <div className="our-work-divider"></div> */}
+          <OurWorkCard title={"WORK IN\nPROGRESS:\nUSING LLMS TO\nSCORE NEWS AND\nOPINION MEDIA"} bgPattern="bg-sunburst" textColor="#00ffff" link={gradingPdf} />
+          <OurWorkCard title={"PROTOTYPE:\nPREDICTION\nHUNTER"} bgPattern="bg-dots" textColor="#a8f0f8" link="https://huggingface.co/spaces/Abhiram9491/NewsPrediction" />
         </div>
       </div>
     </div>

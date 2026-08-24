@@ -18,15 +18,23 @@ export default function Events() {
 
       <h1 className="halftone-title about-page-title">OUR EVENTS</h1>
 
-      {/* ── UPCOMING: card left · label right ── */}
+      {/* ── UPCOMING ── */}
+      <div style={{ padding: '1.5rem 5rem 0 5rem' }}>
+        <h2 className="section-title" style={{ margin: 0 }}>UPCOMING</h2>
+      </div>
       <div className="ev-upcoming-row">
         <img src={tmpl2027} alt="TMPL 2027" className="ev-upcoming-img" />
-        <h2 className="section-title" style={{ margin: 0 }}>UPCOMING</h2>
+        <div className="pagella-body ev-upcoming-details">
+          <p className="ev-upcoming-event-title">The Law and Policy of Prediction Markets as a News Source and Public Risk</p>
+          <p>Friday, February 12th</p>
+          <p>University of Florida Levin College of Law</p>
+          <p>Details TBD</p>
+        </div>
       </div>
 
       {/* ── PAST EVENTS ── */}
       <div className="ev-past-section">
-        <h2 className="section-title" style={{ margin: 0, alignSelf: 'flex-start' }}>PAST EVENTS</h2>
+        <h2 className="section-title" style={{ margin: 0 }}>PAST EVENTS</h2>
 
         {/* TMPL 2026 — right side */}
         <div className="ev-past-top">
@@ -64,7 +72,7 @@ export default function Events() {
           }}
           aria-haspopup="dialog"
         >
-          JOIN OUR MAILING LIST
+          ☞ JOIN OUR MAILING LIST
         </h2>
       </div>
 
