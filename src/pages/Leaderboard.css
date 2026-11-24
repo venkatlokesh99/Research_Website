@@ -1,0 +1,320 @@
+/* ── Summary stat cards ── */
+.leaderboard-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.leaderboard-subtitle p {
+  font-size: 1.15rem;
+  color: #ccc;
+}
+
+.lb-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.lb-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.2rem 2rem;
+  min-width: 140px;
+}
+
+.lb-stat-number {
+  font-family: var(--font-nav);
+  font-size: 2.2rem;
+  color: var(--accent-pink);
+  letter-spacing: 1px;
+}
+
+.lb-stat-label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.25rem;
+}
+
+/* ── Score explainer ── */
+.lb-score-explainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lb-explainer-label {
+  background: var(--accent-pink);
+  color: #000;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.lb-explainer-text {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* ── Table wrapper ── */
+.lb-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lb-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+/* ── Header ── */
+.lb-th {
+  font-family: var(--font-nav);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #888;
+  padding: 0.75rem 0.6rem;
+  text-align: left;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  white-space: nowrap;
+}
+
+.lb-th-rank { text-align: center; width: 60px; }
+.lb-th-author { min-width: 180px; }
+.lb-th-score { text-align: center; width: 90px; }
+.lb-th-hit { width: 130px; }
+.lb-th-preds { text-align: center; width: 90px; }
+.lb-th-breakdown { width: 180px; }
+.lb-th-hedge { text-align: center; width: 80px; }
+.lb-th-articles { text-align: center; width: 70px; }
+
+/* ── Rows ── */
+.lb-row {
+  transition: background 0.15s;
+}
+
+.lb-row:hover {
+  background: rgba(255, 85, 179, 0.06);
+}
+
+.lb-row-top3 {
+  background: rgba(255, 204, 0, 0.03);
+}
+
+.lb-td {
+  padding: 0.7rem 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+/* ── Rank ── */
+.lb-td-rank {
+  text-align: center;
+}
+
+.lb-rank-medal {
+  font-size: 1.3rem;
+}
+
+/* ── Author cell ── */
+.lb-author-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.lb-author-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.lb-badge {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--accent-yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Oracle score ── */
+.lb-td-score {
+  text-align: center;
+}
+
+.lb-score {
+  font-family: var(--font-nav);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ── Hit rate with bar ── */
+.lb-hit-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.lb-hit-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lb-hit-bar-bg {
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.lb-hit-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+/* ── Predictions ── */
+.lb-td-preds {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ── Outcome breakdown bar ── */
+.lb-td-breakdown {
+  padding-right: 1rem;
+}
+
+.lb-breakdown-bar {
+  display: flex;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.lb-bar-segment {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.lb-bar-true { background: #00ff88; }
+.lb-bar-partial { background: #ffcc00; }
+.lb-bar-false { background: #ff5555; }
+
+.lb-breakdown-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: #777;
+  margin-top: 0.2rem;
+  padding: 0 2px;
+}
+
+.lb-bl-true { color: #00ff88; }
+.lb-bl-partial { color: #ffcc00; }
+.lb-bl-false { color: #ff5555; }
+
+/* ── Hedge ── */
+.lb-td-hedge {
+  text-align: center;
+  color: #aaa;
+}
+
+/* ── Articles ── */
+.lb-td-articles {
+  text-align: center;
+  color: #aaa;
+}
+
+/* ── Legend ── */
+.lb-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+.lb-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.lb-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.lb-dot-true { background: #00ff88; }
+.lb-dot-partial { background: #ffcc00; }
+.lb-dot-false { background: #ff5555; }
+
+/* ── Footer note ── */
+.lb-footer-note {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lb-footer-note p {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+.lb-checkpoint-note {
+  margin-top: 0.75rem;
+  color: var(--accent-yellow) !important;
+  font-size: 0.85rem !important;
+  font-style: italic;
+}
+
+/* ── Mobile responsive ── */
+@media (max-width: 767px) {
+  .lb-stats-row {
+    gap: 0.75rem;
+  }
+
+  .lb-stat-card {
+    padding: 0.8rem 1rem;
+    min-width: 120px;
+  }
+
+  .lb-stat-number {
+    font-size: 1.6rem;
+  }
+
+  .lb-score-explainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .lb-table-wrapper {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+  }
+
+  .lb-legend {
+    gap: 1rem;
+  }
+}

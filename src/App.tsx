@@ -13,6 +13,7 @@ import Events from './pages/Events';
 import Library from './pages/Library';
 import Research from './pages/Research';
 import Team from './pages/Team';
+import Leaderboard from './pages/Leaderboard';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/library" element={<Library />} />
             <Route path="/research" element={<Research />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
           </Routes>
         </main>
       </div>
